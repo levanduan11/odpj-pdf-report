@@ -269,7 +269,8 @@
 .mod-table02.fz13 th,
 .mod-table02.fz13 td {
   font-size: 13px;
-  font-size: .8125rem
+  font-size: .8125rem;
+  text-align: center;
 }
 
 .mod-table02 th,
