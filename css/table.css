@@ -928,3 +928,7 @@ div.mod-table02 .tbody .item .detail .wrap .box7 {
   top: 0;
   left: 0
 }
+
+.hide-border-left {
+  border-left: 1px solid #fff !important;
+}
