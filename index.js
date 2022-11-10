@@ -6,7 +6,7 @@ var data = {
 }
 function fake() {
   var fakeData = [];
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i <100; i++) {
     var obj = {};
     Object.assign(obj, data);
     obj.no = i + 1;
@@ -37,16 +37,12 @@ var object = {
   body: fake()
 }
 
-
-
-
-
 function buildNormalTable(props) {
   var div = buildElement('div', { className: ['mod-table_wrap'] });
-  var table = Table(props);
-  var thead = Thead();
-  var tbody = Tbody();
-  var tr = Tr();
+  var table = cTable(props);
+  var thead = cThead();
+  var tbody = cTbody();
+  var tr = cTr();
   thead.appendChild(tr);
   for (var key in object) {
     if (Object.hasOwnProperty.call(object, key)) {
@@ -54,7 +50,7 @@ function buildNormalTable(props) {
       if (key === 'head') {
         if (Array.isArray(value)) {
           for (var i = 0; i < value.length; i++) {
-            var th = Th(value[i]);
+            var th = cTh(value[i]);
             tr.appendChild(th);
           }
         }
@@ -63,17 +59,16 @@ function buildNormalTable(props) {
       if (key === 'body') {
         if (Array.isArray(value)) {
           for (var i = 0; i < value.length; i++) {
-            var tr = Tr();
+            var tr = cTr();
             var obTr = value[i];
             for (var key in obTr) {
               if (Object.hasOwnProperty.call(obTr, key)) {
                 var element = obTr[key];
-                var td = Td({ child: element, className: 'tac' });
+                var td = cTd({ child: element, className: 'tac' });
                 tr.appendChild(td);
               }
             }
             tbody.appendChild(tr);
-            console.log(value[i]);
           }
         }
       }
@@ -84,7 +79,6 @@ function buildNormalTable(props) {
   div.appendChild(table);
   return div;
 }
-
 
 function buildElement(type, props) {
   var element = document.createElement(type);
@@ -116,22 +110,22 @@ function buildElement(type, props) {
   }
   return element;
 }
-function Table(props) {
+function cTable(props) {
   return buildElement('table', props);
 }
-function Thead(props) {
+function cThead(props) {
   return buildElement('thead', props);
 }
-function Tbody(props) {
+function cTbody(props) {
   return buildElement('tbody', props);
 }
-function Tr(props) {
+function cTr(props) {
   return buildElement('tr', props);
 }
-function Th(props) {
+function cTh(props) {
   return buildElement('th', props);
 }
-function Td(props) {
+function cTd(props) {
   return buildElement('td', props);
 }
 
