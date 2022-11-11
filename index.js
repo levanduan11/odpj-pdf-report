@@ -5,26 +5,6 @@ var data = {
   address: 'hanoi'
 }
 
-function fake() {
-  var fakeData = [];
-  for (i = 0; i < 100; i++) {
-    var obj = {};
-    copyObject(data, obj);
-    console.log(obj);
-    obj.no = i + 1;
-    fakeData.push(obj);
-  }
-  return fakeData;
-}
-function copyObject(source, target) {
-  if (source&&target) {
-    for (var key in source) {
-      if (Object.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-}
 var object = {
   head: [
     {
@@ -48,8 +28,32 @@ var object = {
   body: fake()
 }
 
+
+function fake() {
+  var fakeData = [];
+  for (i = 0; i < 100; i++) {
+    var obj = {};
+    copyObject(data, obj);
+    console.log(obj);
+    obj.no = i + 1;
+    fakeData.push(obj);
+  }
+  return fakeData;
+}
+
+function copyObject(source, target) {
+  if (source&&target) {
+    for (var key in source) {
+      if (Object.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+}
+
+
 function buildNormalTable(props) {
-  var div = buildElement('div', { className: ['mod-table_wrap'] });
+  var wrap = buildElement('div', { className: ['mod-table_wrap'] });
   var table = cTable(props);
   var thead = cThead();
   var tbody = cTbody();
@@ -87,8 +91,8 @@ function buildNormalTable(props) {
   }
   table.appendChild(thead);
   table.appendChild(tbody);
-  div.appendChild(table);
-  return div;
+  wrap.appendChild(table);
+  return wrap;
 }
 
 function buildElement(type, props) {
