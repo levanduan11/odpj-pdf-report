@@ -17,8 +17,7 @@ function fake() {
   return fakeData;
 }
 function copyObject(source, target) {
- 
-  if (source) {
+  if (source&&target) {
     for (var key in source) {
       if (Object.hasOwnProperty.call(source, key)) {
         target[key] = source[key];
