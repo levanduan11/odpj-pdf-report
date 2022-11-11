@@ -34,7 +34,6 @@ function fake() {
   for (i = 0; i < 100; i++) {
     var obj = {};
     copyObject(data, obj);
-    console.log(obj);
     obj.no = i + 1;
     fakeData.push(obj);
   }
@@ -50,7 +49,6 @@ function copyObject(source, target) {
     }
   }
 }
-
 
 function buildNormalTable(props) {
   var wrap = buildElement('div', { className: ['mod-table_wrap'] });
