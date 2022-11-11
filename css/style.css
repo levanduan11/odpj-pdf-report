@@ -45,3 +45,7 @@
 .h-105{
   height: 100px !important;
 }
+.w-30{
+  width: 30px !important;
+  max-width: 30px !important;
+}
