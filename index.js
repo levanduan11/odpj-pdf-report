@@ -4,15 +4,27 @@ var data = {
   email: 'vanA@gmail.com',
   address: 'hanoi'
 }
+
 function fake() {
   var fakeData = [];
-  for (i = 0; i <100; i++) {
+  for (i = 0; i < 100; i++) {
     var obj = {};
-    Object.assign(obj, data);
+    copyObject(data, obj);
+    console.log(obj);
     obj.no = i + 1;
     fakeData.push(obj);
   }
   return fakeData;
+}
+function copyObject(source, target) {
+ 
+  if (source) {
+    for (var key in source) {
+      if (Object.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
 }
 var object = {
   head: [
