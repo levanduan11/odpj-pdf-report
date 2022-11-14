@@ -78,6 +78,7 @@ function buildNormalTable(props) {
               if (Object.hasOwnProperty.call(obTr, key)) {
                 var element = obTr[key];
                 var td = cTd({ child: element, className: 'tac' });
+                console.log(element);
                 tr.appendChild(td);
               }
             }
