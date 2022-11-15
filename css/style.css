@@ -49,3 +49,27 @@
   width: 30px !important;
   max-width: 30px !important;
 }
+.border-b-dot{
+ border-bottom: .5pt dotted black !important;
+}
+.border-t-dot{
+ border-top: .5pt dotted black !important;
+}
+.border-l-dot{
+ border-left: .5pt dotted black !important;
+}
+.border-r-dot{
+ border-right: .5pt dotted black !important;
+}
+.border-t-none{
+  border-top: none !important;
+}
+.border-b-none{
+  border-bottom: none !important;
+}
+.border-l-none{
+  border-left: none !important;
+}
+.border-r-none{
+  border-right: none !important;
+}
