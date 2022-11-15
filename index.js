@@ -31,10 +31,16 @@ var object = {
 
 function fake() {
   var fakeData = [];
+  var randomName = [];
+  for (var i = 0; i < 26; i++){
+    randomName.push('nguyen van ' + String.fromCharCode(i + 'a'.charCodeAt(0)));
+  }
   for (i = 0; i < 100; i++) {
     var obj = {};
     copyObject(data, obj);
     obj.no = i + 1;
+    var index = Math.floor(Math.random() * randomName.length);
+    obj.name = randomName[index];
     fakeData.push(obj);
   }
   return fakeData;
