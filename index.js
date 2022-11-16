@@ -39,8 +39,6 @@ function fake() {
     var obj = {};
     copyObject(data, obj);
     obj.no = i + 1;
-    var index = Math.floor(Math.random() * randomName.length);
-    obj.name = randomName[index];
     fakeData.push(obj);
   }
   return fakeData;
