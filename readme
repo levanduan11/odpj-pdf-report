@@ -1,2 +1,3 @@
-wkhtmltopdf --enable-local-file-access --print-media-type --debug-javascript 08.html 8.pdf
+wkhtmltopdf --enable-local-file-access --print-media-type --debug-javascript 06-1.html 06-1.pdf
+wkhtmltopdf --page-size A3 --enable-local-file-access --print-media-type --debug-javascript 08.html 08.pdf
 https://wkhtmltopdf.org/

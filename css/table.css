@@ -931,17 +931,17 @@ div.mod-table02 .tbody .item .detail .wrap .box7 {
 }
 
 .hide-border-left {
-  border-left: 1px solid #fff !important;
+  border-left: transparent 1px solid !important;
 }
 
 .hide-border-right {
-  border-right: 0.5px solid #fff !important;
+  border-right: transparent 1px solid !important;
 }
 
 .hide-border-top {
-  border-top: 0.5px solid #fff !important;
+  border-top: transparent 1px solid !important;
 }
 
 .hide-border-bottom {
-  border-bottom: 0.5px solid #fff !important;
+  border-bottom: transparent 1px solid !important;
 }
