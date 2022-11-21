@@ -12,8 +12,8 @@
 .mod-table02 th,
 .mod-table02 td {
   border: 0.5px solid rgb(65, 63, 63);
-  padding:3px 5px;
-  font-size: 7px;
+  padding: 3px 5px;
+  font-size: 10px;
   max-width: 300px;
 }
 
@@ -79,9 +79,11 @@
 .hide-border-bottom {
   border-bottom: transparent 1px solid !important;
 }
-.table-border-wrap{
+
+.table-border-wrap {
   border: 2px solid #000 !important;
 }
-.table-border-wrap02{
+
+.table-border-wrap02 {
   border: 2px solid rgb(142, 138, 138) !important;
 }

@@ -97,3 +97,9 @@
   transform: rotate(14deg);
   -webkit-transform:rotate(14deg);
 }
+.no-w{
+  white-space: nowrap;
+}
+.m-l-50pt{
+  margin-left: 50%;
+}
