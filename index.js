@@ -1,41 +1,7 @@
-var data = {
-  no: 1,
-  name: 'nguyen van a',
-  email: 'vanA@gmail.com',
-  address: 'hanoi'
-}
-
-var object = {
-  head: [
-    {
-      child: 'no',
-      className: ['tac']
-    },
-    {
-      child: ['top name', 'bottom name'],
-      className: ['tac']
-    },
-    {
-      child: 'email',
-      className: ['tac']
-    },
-    {
-      child: 'address',
-      className: ['tac']
-    }
-
-  ],
-  body: fake()
-}
-
 
 function fake() {
   var fakeData = [];
-  var randomName = [];
-  for (var i = 0; i < 26; i++){
-    randomName.push('nguyen van ' + String.fromCharCode(i + 'a'.charCodeAt(0)));
-  }
-  for (i = 0; i < 100; i++) {
+  for (i = 0; i < 70; i++) {
     var obj = {};
     copyObject(data, obj);
     obj.no = i + 1;

@@ -1,0 +1,37 @@
+//デジタル太郎	受付済	ー	ー	デジタル債券	JP**********	********ファンド	現物取引	ー	ー	買	特定あり	ー	ー	ー	ー	*****	ー	*****	ー					YYYY/MM/DD hh:mm:ss	WEB
+//Digital Taro Accepted ー ー Digital bond JP********** ********Fund spot trading ー ー Buy Specified ー ー ー ー ***** ー ***** ー YYYY/MM/DD hh:mm:ss WEB
+var json_data = 
+    {
+        "no": "1",
+        "transaction_method": "募集取引",
+        "order_number": "2212120000001",
+        "department_store": "100",
+        "customer_code": "デジタル太郎",
+        "customer_name": "受付済",
+        "order_status": "--",
+        "market": "--",
+        "the_other_party": "デジタル債券",
+        "product_type": "JP**********",
+        "stock_code": "********ファンド",
+        "trading_name": "現物取引",
+        "transaction_type": "--",
+        "credit_classification": "--",
+        "transaction_classification": "000",
+        "buy_sell_division": "買",
+        "account_classification": "特定あり",
+        "payment_method": "--",
+        "order_type": "--",
+        "price_specification": "--",
+        "terms_conditions": "--",
+        "transaction_price": "*** *** ***",
+        "enforcement_conditions": "*** *** *** ***",
+        "order_quantity": "--",
+        "date_of_expiry": "--",
+        "contract_price": "--",
+        "contract_volume": "--",
+        "contract_amount": "--",
+        "contract_number": "--",
+        "time": "YYYY/MM/DD hh:mm:ss",
+        "route": "WEB",
+        "remarks": "--"
+    };
