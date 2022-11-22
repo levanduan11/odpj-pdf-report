@@ -11,7 +11,7 @@ function fake() {
 }
 
 function copyObject(source, target) {
-  if (source&&target) {
+  if (source && target) {
     for (var key in source) {
       if (Object.hasOwnProperty.call(source, key)) {
         target[key] = source[key];
@@ -47,7 +47,7 @@ function buildNormalTable(props) {
             for (var key in obTr) {
               if (Object.hasOwnProperty.call(obTr, key)) {
                 var element = obTr[key];
-                var td = cTd({ child: element, className: 'tac' });
+                var td = cTd({ child: element});
                 console.log(element);
                 tr.appendChild(td);
               }
